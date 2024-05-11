@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+html {
+	scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+body{font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.slider{
+    width: 100%;
+    min-height: 100vh;
+    aspect-ratio:16/9;
+    background-color: black;
+    position: relative;
+
+}
+
+.slider-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.slider-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.slider-menu{
+    width: 100%;
+    position: fixed;
+    top:0;
+    text-align: left;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.700);
+    background-color: rgba(0, 0, 0, 0.400);
+}
+.menu-logo{
+    padding-left: 3%;
+}
+.menu-items{
+    margin-right: 3%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.menu-items li a{
+    text-decoration: none;
+    color:rgb(245,245,220) ;
+    padding: 15px 25px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.200);
+    transition:.2s ease;
+}
+.menu-items li a:hover{
+background-color: rgba(0, 0, 0, 0.400);
+}
+h1{
+    color: beige;
+    font-size: 5rem;
+}
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+}
+.p{
+    font-size: 1.5rem;
+}
+
+.slider-content p{
+    color: beige;
+    font-size: 1.5rem;
+
+}
+
+.slider-menu a{
+    color: beige;
+    font-size: 1.5rem;
+}
+.section{
+    padding: 100px 0;
+
+}
+.section_2{
+    padding: 30px;
+    background-image:url(http://localhost/portfolio/images/img/background_erp.jpeg);
+
+}
+.boxed{
+    max-width: 1280px;
+    height: 100%;
+    margin-inline: auto;
+}
+.section_2 .boxed h2{
+    text-align: left;
+    
+}
+.section_2 .boxed h3{
+    font-size: 2rem;
+}
+
+.section_3 .boxed h2{
+    text-align: center;
+    
+}
+.flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.w40{
+    width: 40%;
+}
+
+.w60{
+    width: 60%;
+    
+}
+
+.graph-erp{
+    width: 40%;
+}
+.rtb_text{
+    width: 60%;
+    padding: 5%;
+}
+.section_2 img{
+    width: 70%;
+    height: auto;
+}
+.realisation{
+    height: auto;
+    aspect-ratio: 1.1;
+    padding: 20px;
+}
+.realisation a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.realisation img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media(max-width:810px){
+    .slider-menu{
+        background-color: rgba(0, 0, 0, 0.700);
+        z-index: 9999;
+    }
+    .menu-logo{
+        padding-left: 0;
+        text-align: center;
+
+    }
+    .menu-logo img{
+        width: 50px;
+        height: auto;
+    }
+
+
+    .menu-items li a{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .slider-content{
+        width: 90%;
+    }
+    H1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .p{
+        font-size: 1rem;
+    }
+    .toColumn{
+        flex-direction: column;
+        text-align: center;
+    }
+    .toColumn p{
+        flex-direction: column;
+        text-align: left;
+    }  
+    .wm100{
+        width: 100% !important;
+    }
+    .section{
+        padding: 50px 0;
+        text-align: left;
+    }
+    .section h2{
+        padding-bottom: 5px;
+    }
+    .boxed{
+        max-width: 90%;
+    }
+
+    .section_2 h3{
+        padding-top: 10px;
+        text-align: center;
+    }
+        .graph-erp img{
+        padding: 0;
+    }
+}
